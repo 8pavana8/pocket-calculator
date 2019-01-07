@@ -1,6 +1,6 @@
 * {
   background-color: black;
-  font-family: 'Papyrus', fantasy;
+  font-family: 'Major Mono Display', monospace;
   font-size: 60px;
 }
 
@@ -16,13 +16,13 @@
 
 td {
     padding: 10px 10px 10px 10px;
-    border: 3px solid ivory;
-    background-color: #F0F8FF;
+    border: 2px solid white;
+    background-color: #FFFF00;
     font-weight: bold;
 }
 
 tr {
-  width: 30px;
+  width: 20px;
 }
 
 table {
@@ -32,7 +32,7 @@ table {
 }
 
 #display {
-  height: 45px;
+  height: 55px;
   background-color: black;
-  border-color: #F0F8FF;
+  border-color: #FFFF00;
 }
