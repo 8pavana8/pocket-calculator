@@ -17,7 +17,7 @@
 td {
     padding: 15px 15px 15px 15px;
     border: 5px solid white;
-    background-color: #FF7F50;
+    background-color: #98FB98;
     font-weight: bold;
 }
 
@@ -34,5 +34,5 @@ table {
 #display {
   height: 60px;
   background-color: white;
-  border-color: ##FF7F50;
+  border-color: #98FB98;
 }
