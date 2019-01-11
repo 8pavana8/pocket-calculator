@@ -35,4 +35,5 @@ table {
   height: 150px;
   background-color: white;
   border-color: #98FB98;
+  table-align: center;
 }
