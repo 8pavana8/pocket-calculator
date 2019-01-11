@@ -11,7 +11,7 @@
 
 #calculator {
   text-align: center;
-  width: 300px;
+  width: 150px;
 }
 
 td {
@@ -26,13 +26,13 @@ tr {
 }
 
 table {
-  margin-left: 350px;
-  margin-right: 350px;
-  margin-top: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 150px;
 }
 
 #display {
-  height: 500px;
+  height: 150px;
   background-color: white;
   border-color: #98FB98;
 }
