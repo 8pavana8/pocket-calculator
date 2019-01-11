@@ -1,7 +1,7 @@
 * {
   background-color: black;
   font-family: 'Papyrus', fantasy;;
-  font-size: 80px;
+  font-size: 70px;
 }
 
 #intro {
@@ -11,7 +11,7 @@
 
 #calculator {
   text-align: center;
-  width: 450px;
+  width: 300px;
 }
 
 td {
@@ -26,13 +26,13 @@ tr {
 }
 
 table {
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 350px;
+  margin-right: 350px;
   margin-top: 30px;
 }
 
 #display {
-  height: 60px;
+  height: 500px;
   background-color: white;
   border-color: #98FB98;
 }
