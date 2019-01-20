@@ -1,39 +1,34 @@
 * {
-  background-color: black;
-  font-family: Georgia, serif;
-  font-size: 70px;
+  background-color: #8FBC8F;
+  font-family: "Brush Script MT", cursive;
+  font-size: 45px;
+  font-style: bold;
 }
 
-#intro {
+#text {
+  color:  white;
+  text-align: center;
+}
+
+#table {
   color: white;
   text-align: center;
+  align-content: center;
+  width: 500px;
+  height:700px;
 }
 
-#calculator {
-  text-align: center;
-  width: 150px;
+#design {
+  padding: 15px 15px 15px 15px;
+  border: 5px solid gray;
+  background-color: #D8BFD8;
+  font-weight: bold;
 }
 
 td {
-    padding: 15px 15px 15px 15px;
-    border: 5px solid white;
-    background-color: #98FB98;
-    font-weight: bold;
+  height: 60px;
+ background-color:#D8BFD8 ;
+ font-size: 30px;
+ border: 4px solid gray;
 }
 
-tr {
-  width: 30x;
-}
-
-table {
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 150px;
-}
-
-#display {
-  height: 150px;
-  background-color: white;
-  border-color: #98FB98;
-  table-align: center;
-}
