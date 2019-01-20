@@ -20,15 +20,34 @@
 
 #design {
   padding: 15px 15px 15px 15px;
-  border: 5px solid gray;
   background-color: #D8BFD8;
   font-weight: bold;
 }
 
 td {
-  height: 60px;
+  height: 100px;
  background-color:#D8BFD8 ;
  font-size: 30px;
  border: 4px solid gray;
 }
 
+#style {
+padding: 15px 15px 15px 15px;
+border: 5px solid gray;
+background-color: #D8BFD8;
+font-weight: bold;
+}
+
+.buttons {
+  height: 120px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.buttons2 {
+  height: 120px;
+  width: 252px;
+  font-weight: bold;
+  font-size: 40px;
+}
