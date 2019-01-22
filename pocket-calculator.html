@@ -1,56 +1,72 @@
 <!DOCTYPE html>
+
 <html>
-  <link rel="stylesheet" type="text/css" href="pocket-calculator.css">
-<!-- <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet"> -->
-      <script type="text/javascript" src="pocket-calculator.js"></script>
-      <title>Pavana Manoj APCSP Pocket-Calculator Midterm Project</title>
-    </head>
-    <body>
-        <div id="text">
-            <p>The Coolest Pocket Calculator Ever</p>
+  <head>
+    <title>APCSP Pocket Calculator</title>
 
-        </div>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="pocket-calculator.css"/>
 
-          <div>
-            <table id="table" align="center">
-              <tr>
-            <td colspan="4" id="style"></td>
-          </tr>
-          <tr>
-            <td><button id="design" class="buttons"  onclick="clear()">AC</button></td>
-            <td><button id="design" class="buttons" onclick="negation()">+/-</button></td>
-            <td><button id="design" class="buttons" onclick="percent()">%</button></td>
-            <td><button id="design" class="buttons" onclick="divide()">÷</button></td>
-          </tr>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="pocket-calculator.js"></script>
+  </head>
 
-          <tr>
-            <td><button id="design" class="buttons" onclick="num(7)">7</button></td>
-            <td><button id="design" class="buttons" onclick="num(8)">8</button></td>
-            <td><button id="design" class="buttons" onclick="num(9)">9</button></td>
-            <td><button id="design" class="buttons" onclick="multiply()">x</button></td>
-          </tr>
+  <body>
+    <div id="text">
+    <p>The Coolest Pocket Calculator Ever</p>
 
-          <tr>
-            <td><button id="design" class="buttons" onclick="num(4)">4</button></td>
-            <td><button id="design" class="buttons" onclick="num(5)">5</button></td>
-            <td><button id="design" class="buttons" onclick="num(6)">6</button></td>
-            <td><button id="design" class="buttons" onclick="subtract()">-</button></td>
-          </tr>
+    </div>
+<body onload = "clean();">
 
-          <tr>
-            <td><button id="design" class="buttons" onclick="num(1)">1</button></td>
-            <td><button id="design" class="buttons" onclick="num(2)">2</button></td>
-            <td><button id="design" class="buttons" onclick="num(3)">3</button></td>
-            <td><button id="design" class="buttons" onclick="add()">+</button></td>
-          </tr>
+    <div id = "calc_frame">
+      <form name = "calculator">
+        <input id="textview" class = "textview" name = "display" disabled>
+        <p id="textview class"="textview">
+      </form>
 
-          <tr>
-            <td><button id="design" class="buttons" onclick="clickNum(0)">0</button></td>
-            <td><button id="design" class="buttons" onclick="decimal()">.</button></td>
-            <td colspan="2"><button id="design" class="buttons2" onclick="equals()">=</button></td>
-          </tr>
+<table>
+  <tr>
+    <td id="td">
+      <input id = "button" type="button" name="allClear" value="AC" onclick="clean();">
+      <input id = "button" type="button" name="negation" value="+/-" onclick="negation('+/-');">
+      <input id="button" type = "button" name = "percentage" value = "%" onclick = "percentage('%');">
+      <input id = "button" type = "button" name = "division" value = "÷" onclick = "insertNum('÷'); clearOnOperation();">
+   </td>
+ </tr>
+   <tr>
+     <td id="td">
+       <input id = "button" type = "button" name = "seven" value = "7" onclick = "insertNum(7);">
+       <input id = "button" type = "button" name = "eight" value = "8" onclick = "insertNum(8);">
+       <input id = "button" type = "button" name = "nine" value = "9" onclick = "insertNum(9);">
+       <input id = "button" type = "button" name = "multiplication" value = "x" onclick = "insertNum('x'); clearOnOperation();">
+    </td>
+    </tr>
+    <tr>
+      <td id="td">
+        <input id = "button" type = "button" name = "four" value = "4" onclick = "insertNum(4);">
+        <input id = "button" type = "button" name = "five" value = "5" onclick = "insertNum(5);">
+        <input id = "button" type = "button" name = "six" value = "6" onclick = "insertNum(6);">
+        <input id = "button" type = "button" name = "subtraction" value = "-" onclick = "insertNum('-'); clearOnOperation();">
+     </td>
+    </tr>
+    <tr>
+      <td id="td">
+        <input id = "button" type = "button" name = "one" value = "1" onclick = "insertNum(1);">
+        <input id = "button" type = "button" name = "two" value = "2" onclick = "insertNum(2);">
+        <input id = "button" type = "button" name = "three" value = "3" onclick = "insertNum(3);">
+        <input id = "button" type = "button" name = "addition" value = "+" onclick = "insertNum('+'); clearOnOperation();">
+     </td>
+    </tr>
+    <tr>
+      <td id="td">
+        <input id = "button" type = "button" name = "zero" value = "0" onclick = "insertNum(0);">
+        <input id = "button" type = "button" name = "decimal" value = "." onclick = "decimalInsert('.');">
+        <input id = "button" type = "button" name = "equal" value = "=" onclick = "equal();">
+        <input id = "button" type = "button" name = "piButton" value = "Pi" onclick = "piInsert(3.14159265358);"
+     </td>
+    </tr>
 
-            </table>
-      </div>
+</table>
+</div>
   </body>
 </html>
