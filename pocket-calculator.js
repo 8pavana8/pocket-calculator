@@ -39,18 +39,7 @@ if(num === '*' || num === '/' || num === '+'|| num === '-'){
   if(Number(document.calculator.display.value.length) <= 10){
     document.calculator.display.value = document.calculator.display.value;
   }else{
-    document.getElementById("zero_button").disabled = true;
-    document.getElementById("button1").disabled = true;
-    document.getElementById("button2").disabled = true;
-    document.getElementById("button3").disabled = true;
-    document.getElementById("button4").disabled = true;
-    document.getElementById("button5").disabled = true;
-    document.getElementById("button6").disabled = true;
-    document.getElementById("button7").disabled = true;
-    document.getElementById("button8").disabled = true;
-    document.getElementById("button9").disabled = true;
-    document.getElementById("decimal").disabled = true;
-    document.getElementById("pi_Button").disabled = true;
+    document.getElementsByClassName("button").disabled = true;
   }
   //disables buttons to prevent overflow
 
@@ -72,19 +61,8 @@ function clean(){
   firstNegate = false;
   console.log(finalSym, operationInserted, execution, decimalStatus, piStatus, decimalInserted);
     expressionArray = [];
+    document.getElementsByClassName("button").disabled = false;
 
-    document.getElementById("zero_button").disabled = false;
-    document.getElementById("button1").disabled = false;
-    document.getElementById("button2").disabled = false;
-    document.getElementById("button3").disabled = false;
-    document.getElementById("button4").disabled = false;
-    document.getElementById("button5").disabled = false;
-    document.getElementById("button6").disabled = false;
-    document.getElementById("button7").disabled = false;
-    document.getElementById("button8").disabled = false;
-    document.getElementById("button9").disabled = false;
-    document.getElementById("pi_Button").disabled = false;
-    document.getElementById("decimal").disabled = false;
 }
 
 function clearOnOperation(){
@@ -99,19 +77,8 @@ function clearOnOperation(){
   piStatus = false;
   decimalInserted = false;
   firstNegate = true;
+    document.getElementsByClassName("button").disabled = false;
 
-  document.getElementById("zero_button").disabled = false;
-  document.getElementById("button1").disabled = false;
-  document.getElementById("button2").disabled = false;
-  document.getElementById("button3").disabled = false;
-  document.getElementById("button4").disabled = false;
-  document.getElementById("button5").disabled = false;
-  document.getElementById("button6").disabled = false;
-  document.getElementById("button7").disabled = false;
-  document.getElementById("button8").disabled = false;
-  document.getElementById("button9").disabled = false;
- document.getElementById("pi_Button").disabled = false;
-  document.getElementById("decimal").disabled = false;
 }
 
 function equals(){
@@ -119,19 +86,8 @@ function equals(){
   firstPercent = false;
   piStatus = false;
   finalSym = true;
+    document.getElementsByClassName("button").disabled = true;
 
-  document.getElementById("decimal").disabled = true;
-  document.getElementById("zero_button").disabled = true;
-  document.getElementById("button1").disabled = true;
-  document.getElementById("button2").disabled = true;
-  document.getElementById("button3").disabled = true;
-  document.getElementById("button4").disabled = true;
-  document.getElementById("button5").disabled = true;
-  document.getElementById("button6").disabled = true;
-  document.getElementById("button7").disabled = true;
-  document.getElementById("button8").disabled = true;
-  document.getElementById("button9").disabled = true;
-  document.getElementById("pi_Button").disabled = true;
 
   let calculatorAnswer= eval(expressionArray.join(''));
   //completes operations
