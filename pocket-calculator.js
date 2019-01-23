@@ -1,4 +1,4 @@
-var execution = false;
+var execute = false;
 var exepressArray= [];
 var decStatus = false;
 var piStat = false;
@@ -11,12 +11,12 @@ var finalSym = false;
 var exponential;
 var initialNegate = false;
 var negated = false;
-  console.log("var status", finalSym, operationInserted, execution, decStatus, piStat, decimalInserted);
+  console.log("var status", finalSym, operationInserted, execute, decStatus, piStat, decimalInserted);
 //logs false to the console after loading onto the page
 function insertNum(num){
-  if(execution == false){
+  if(execute == false){
   document.calculator.display.value = "";
-  execution = true;
+  execute = true;
 }
 
 //replaces operators
@@ -54,12 +54,12 @@ function clean(){
   operationInserted = false;
   document.calculator.display.value=0;
    i = i = 7;
-  execution = false;
+  execute = false;
   decStatus = false;
   piStat = false;
   decimalInserted = false;
   initialNegate = false;
-  console.log(finalSym, operationInserted, execution, decStatus, piStat, decimalInserted);
+  console.log(finalSym, operationInserted, execute, decStatus, piStat, decimalInserted);
      exepressArray = [];
     document.getElementsByClassName("button").disabled = false;
 
@@ -72,7 +72,7 @@ function clearOnOperation(){
   symbolStatus = false;
   firstPercent = false;
   document.calculator.display.value= 0;
-  execution = false;
+  execute = false;
   decStatus = false;
   piStat = false;
   decimalInserted = false;
