@@ -119,7 +119,6 @@ function percentage(){
   document.calculator.display.value = document.calculator.display.value.split(",").join("");
   if(finalSym == false){
   if(firstPercent == false){
-    //nested if statement
   let numberCount = document.calculator.display.value.length;
   numberCount = numberCount -1;
   console.log(numberCount);
